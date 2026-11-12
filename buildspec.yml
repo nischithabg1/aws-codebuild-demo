@@ -1,0 +1,14 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - echo "Welcome to AWS CodeBuild"
+      - echo "Starting the build"
+      - echo "Current source directory:"
+      - pwd
+      - echo "Files in the repository:"
+      - ls -la
+      - test -f README.md
+      - echo "README.md was found"
+      - echo "Build completed successfully"
